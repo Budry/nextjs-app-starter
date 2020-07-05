@@ -9,13 +9,10 @@
 
 import * as React from 'react';
 import {FunctionComponent} from 'react';
+import HelloWorld from '../components/HelloWorld';
 
 const index: FunctionComponent<{}> = () => {
-    return (
-        <div>
-            <h1>Hello world!</h1>
-        </div>
-    );
+    return <HelloWorld/>
 };
 
 export default index;

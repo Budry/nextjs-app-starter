@@ -8,16 +8,10 @@
  */
 
 const withPlugins = require('next-compose-plugins');
-const withTypescript = require('@zeit/next-typescript');
-const withImages = require('next-images');
 const withSass = require('@zeit/next-sass');
 
 module.exports = withPlugins([
-  withTypescript,
   [withSass, {
     cssModules: true
   }],
-  [withImages, {
-    inlineImageLimit: 1,
-  }]
 ]);
